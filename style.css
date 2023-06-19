@@ -1,5 +1,7 @@
-html {
+* {
   box-sizing: border-box;
+}
+html {
   border: 1px solid gray;
   max-width: 600px;
   margin: 0 auto;
@@ -9,20 +11,111 @@ html {
   --sec-heading: "Source Sans";
   background-color: var(--second-color);
 }
-
-.main-header {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--general-color);
-}
-img {
-  size: 1rem;
+body {
+  margin: 0;
 }
 h1 {
   font-family: var(--font-heading);
   color: var(--second-color);
   font-size: 1rem;
+  margin-bottom: 0;
 }
-section img {
+main {
+  margin: 1.9375rem;
+}
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+}
+
+input {
+  font-size: 1rem;
+  color: var(--general-color);
+  padding-top: 0.6875rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.8125rem;
+  padding-right: 7.9375rem;
+  border: #6a1cc3 1.75px solid;
+  border-radius: 2px;
+  width: 100%;
+}
+select {
+  font-size: 0.875rem;
+  color: var(--general-color);
+  padding-top: 0.875rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1rem;
+  border: #6a1cc3 0.109375rem solid;
+  border-radius: 2px;
+}
+#class {
+  width: 60%;
+}
+#timespan {
+  width: 40%;
+}
+.main-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 5.9375rem;
   background-color: var(--general-color);
+}
+.text-input {
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+.selectors {
+  gap: 0.8125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.person-entrys {
+  border: #6a1cc3 1.75px solid;
+  border-radius: 2px;
+  box-shadow: 3px 2.81px #6a1cc3;
+  font-family: var(--sec-heading);
+  display: flex;
+  flex-direction: row;
+  gap: 1.6875rem;
+}
+.h2-header h2 {
+  color: var(--general-color);
+}
+.person-list h2 {
+  font-size: 1rem;
+  color: #00000099;
+  margin-top: 2.8125rem;
+  margin-bottom: 1.25rem;
+}
+.person-entrys p {
+  font-size: 1rem;
+  color: var(--general-color);
+}
+.person-entrys a {
+  font-size: 0.75rem;
+  color: var(--general-color);
+}
+.person-entrys + .person-entrys {
+  margin-top: 0.863125rem;
+}
+
+.person-list img {
+  margin: 14px;
+  padding: 12px;
+  background-color: var(--general-color);
+}
+header img {
+  padding-top: 0.75rem;
+  padding-left: 0.5rem;
+}
+.h2-header > * {
+  margin: 0;
+}
+.h2-header p {
+  font-family: var(--font-heading);
+  color: #00000099;
+  font-size: 0.875rem;
+  margin-bottom: 1.125rem;
 }
